@@ -236,5 +236,3 @@ function strengthindicator(){
 
 
 
-
-
