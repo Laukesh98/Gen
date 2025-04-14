@@ -89,7 +89,7 @@ button.addEventListener('click', ()=>{
     password = '' 
     generatedpassword.value = password  
 
-    if(slider.value<=4 && (checkboxCount> slider.value || checkboxCount < slider.value) ){
+    if(slider.value<=4 && (checkboxCount> slider.value){
         slider.value = checkboxCount
         lengthIndicator.innerText = checkboxCount
     }
@@ -116,7 +116,7 @@ if(symbols.checked){
 
 
 // Compulsory calling 
-for(let i = 0 ; i<GenPass.length;i++){
+for(let i = 0 ; i=<GenPass.length;i++){
     let tempp = GenPass[i]
     password = password+ tempp()
 }
