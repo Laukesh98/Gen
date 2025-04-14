@@ -116,7 +116,7 @@ if(symbols.checked){
 
 
 // Compulsory calling 
-for(let i = 0 ; i=<GenPass.length;i++){
+for(let i = 0 ; i<GenPass.length;i++){
     let tempp = GenPass[i]
     password = password+ tempp()
 }
