@@ -89,7 +89,7 @@ button.addEventListener('click', ()=>{
     password = '' 
     generatedpassword.value = password  
 
-    if(slider.value<=4 && (checkboxCount> slider.value){
+    if(slider.value<=4 && checkboxCount> slider.value){
         slider.value = checkboxCount
         lengthIndicator.innerText = checkboxCount
     }
