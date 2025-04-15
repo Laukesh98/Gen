@@ -10,7 +10,7 @@ let numbers = document.getElementById('numbers')
 let symbols = document.getElementById('symbols')
 let button = document.getElementById('button')
 let indicator = document.getElementById("strength-Indicator")
-let symbolsString = '~@#!$%^&*()_+=-`/?><.,][{}\|;:"' 
+let symbolsString = '~@#!$%^&*()_+=-`/?><.,][{}|;:"' 
 
 let countt = document.getElementById('counttt')
 
