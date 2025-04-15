@@ -13,7 +13,7 @@ let indicator = document.getElementById("strength-Indicator")
 let symbolsString = '~@#!$%^&*()_+=-`/?><.,][{}\|;:"' 
 
 let countt = document.getElementById('counttt')
-let test = 1343
+
 
 
 let password = ''
@@ -88,8 +88,8 @@ button.addEventListener('click', ()=>{
 
     password = '' 
     generatedpassword.value = password  
-
-    if(slider.value<=4){
+    
+    if(slider.value<=4 && checkboxCount> slider.value){
         slider.value = checkboxCount
         lengthIndicator.innerText = checkboxCount
     }
@@ -122,7 +122,7 @@ for(let i = 0 ; i<GenPass.length;i++){
 }
 
 // Rest of char of password
-for(let j = 0; j<(passwordLength - GenPass.length); j++){
+for(let j = 0; j<(slider.value - GenPass.length); j++){
     let funChoose = givingRandom(0 , GenPass.length-1)
     password = password + GenPass[funChoose]()
 }
@@ -130,7 +130,7 @@ for(let j = 0; j<(passwordLength - GenPass.length); j++){
 // Shuffling Password
   
 password = Shufflingpassword(Array.from(password));
-console.log(password)
+
     generatedpassword.value = password
             
     
@@ -166,7 +166,7 @@ strengthindicator()
 function Shufflingpassword(array){
     for(let i= 0; i<array.length; i++){
         const j = Math.floor(Math.random() * (i + 1));
-        console.log(j)
+        
         let temp = array[j]
         array[j]= array[i]
         array[i] = temp
@@ -192,8 +192,8 @@ function strengthindicator(){
     }
     if(checkboxCount==3){
         indicator.classList.remove(current_class_name)
-        indicator.classList.add("bg-yellow-700") 
-        current_class_name = "bg-yellow-700"
+        indicator.classList.add("bg-yellow-500") 
+        current_class_name = "bg-yellow-500"
     }
     if(checkboxCount==4){
         indicator.classList.remove(current_class_name)
@@ -201,38 +201,3 @@ function strengthindicator(){
         current_class_name = "bg-green-700"
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
