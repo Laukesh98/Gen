@@ -10,7 +10,7 @@
     --color-red-700: oklch(50.5% 0.213 27.518);
     --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
-    --color-yellow-700: oklch(55.4% 0.135 66.442);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
@@ -304,8 +304,8 @@
   .bg-red-700 {
     background-color: var(--color-red-700);
   }
-  .bg-yellow-700 {
-    background-color: var(--color-yellow-700);
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
@@ -362,6 +362,10 @@
   .blur-xs {
     --tw-blur: blur(var(--blur-xs));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
   }
   .hover\:cursor-pointer {
     &:hover {
