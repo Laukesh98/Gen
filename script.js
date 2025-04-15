@@ -86,6 +86,10 @@ button.addEventListener('click', ()=>{
     if(checkboxCount==0 )
     return
 
+
+if(!copied.classList.contains('invisible')){
+    copied.classList.add('invisible')
+}
     password = '' 
     generatedpassword.value = password  
     
@@ -155,6 +159,8 @@ catch(e){
 }
 copied.classList.remove('invisible')
 setTimeout(() => {
+    if(copied.classList.contains('invisible'))
+        return
 copied.classList.add('invisible')
 }, 2000);
 }
